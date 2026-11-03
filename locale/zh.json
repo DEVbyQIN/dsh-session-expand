@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "会话增强包 (dsh-session-expand)",
+    "description": "一次安装获得三个会话插件：标签页、引用到对话、会话 Markdown 导出。每个组件都能在插件页单独开关，互不影响。"
+  }
+}

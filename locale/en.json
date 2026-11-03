@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Suite (dsh-session-expand)",
+    "description": "Three session plugins in one install: session tabs, quote to chat and session Markdown export. Every component has its own switch on the Plugins page."
+  }
+}

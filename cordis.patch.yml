@@ -1,0 +1,25 @@
+# dsh-session-expand — meta bundle layer.
+#
+# This package is only a bundle: it carries no plugin code of its own. Its patch
+# inserts the three component rows, and every component stays an independent
+# Loader entry, so the Plugins page shows one switch and one optional
+# configuration page per component.
+#
+# Each `name` is the component package's bare name. A row must use the bare
+# package name: that is how the client-module registry attaches the package's
+# browser half (`dsh.client`) to the row.
+#
+# Keep the row ids identical to the component packages' own ids. The per-row
+# switch in the Plugins page writes `disabled` overrides into the profile's
+# `cordis.patch.yml` keyed by these ids; if the id changes, a user's earlier
+# override no longer applies to the row.
+#
+# Components are enabled by default: installing the bundle means "I want the
+# whole set". Turning one off is a one-click switch, not an uninstall.
+- insert:
+    - id: session-tabs
+      name: dsh-session-tabs
+    - id: quote-to-chat
+      name: dsh-quote-to-chat
+    - id: session-md
+      name: dsh-session-md
